@@ -145,18 +145,6 @@ button:hover {
     white-space: nowrap;
 }
 
-@media (max-width: 650px) {
-    .left .right-pane {
-        display: none;
-    }
-    .right .left-pane {
-        display: none;
-    }
-    .left .left-pane {
-        flex: 1;
-    }
-}
-
 .right-pane {
     border: solid #aaa;
     border-width: 0 0 0 1px;
@@ -176,6 +164,21 @@ button:hover {
 
 .right-pane .conversation-header>button {
     flex: 0 0 auto;
+}
+
+@media (max-width: 650px) {
+    .left .right-pane {
+        display: none;
+    }
+    .right .left-pane {
+        display: none;
+    }
+    .left .left-pane {
+        flex: 1;
+    }
+    .right-pane {
+        border: 0;
+    }
 }
 
 @media (min-width: 650px) {
